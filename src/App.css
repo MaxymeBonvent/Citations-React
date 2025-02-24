@@ -1,0 +1,156 @@
+/* -------- PROPRIÉTÉS COMMUNES -------- */
+
+/* Corps de la page */
+body{
+    /* Fond et contour */
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+/* Titres et sous-titres */
+h1, h2{
+    /* Centrage */
+    text-align: center;
+}
+
+/* Header et Footer */
+header, footer{
+    /* Fond et contour */
+    background-color: rgb(0, 100, 200);
+    border: 1px solid transparent;
+
+    /* Texte */
+    text-align: center;
+}
+
+/* Main et div des citations */
+main, #div_citations{
+    /* Fond et contour */
+    border: 2px solid black;
+
+    /* Espace externe */
+    margin: 5px;
+  
+    /* Position des éléments internes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Div des citations */
+#div_citations{
+    /* Fond et contour */
+    border: 1px solid transparent;
+
+    /* Espace interne */
+    padding: 8px;
+}
+
+/* Citations */
+#citation{
+    /* Taille du texte */
+    font-size: 20px;
+
+    /* Centrage du texte */
+    text-align: center;
+}
+
+/* Boutons */
+button{
+    /* Souris */
+    cursor: pointer;
+
+    /* Espace externe */
+    margin-bottom: 10px;
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* VERSION TRÈS PETITE */
+@media all and (max-width: 344px)
+{
+    /* Div des citations */
+    #div_citations{
+        /* Dimensions */
+        width: 90%;
+    }
+
+    /* Citations */
+    #citation{
+        /* Taille du texte */
+        font-size: 22px;
+    }
+
+    /* Boutons */
+    button{
+        /* Taille du texte */
+        font-size: 20px;
+    }
+}
+
+/* VERSION PETITE */
+@media all and (min-width: 345px) and (max-width: 540px)
+{
+    /* Div des citations */
+    #div_citations{
+        /* Dimensions */
+        width: 90%;
+    }
+
+    /* Citations */
+    #citation{
+        /* Taille du texte */
+        font-size: 22px;
+    }
+
+    /* Boutons */
+    button{
+        /* Taille du texte */
+        font-size: 20px;
+    }
+}
+
+/* VERSION MOYENNE */
+@media all and (min-width: 541px) and (max-width: 912px)
+{
+    /* Div des citations */
+    #div_citations{
+        /* Dimensions */
+        width: 50%;
+    }
+
+    /* Citations */
+    #citation{
+        /* Taille du texte */
+        font-size: 22px;
+    }
+
+    /* Boutons */
+    button{
+        /* Taille du texte */
+        font-size: 20px;
+    }
+}
+
+/* VERSION GRANDE */
+@media all and (min-width: 913px)
+{
+    /* Div des citations */
+    #div_citations{
+        /* Dimensions */
+        width: 50%;
+    }
+
+    /* Citations */
+    #citation{
+        /* Taille du texte */
+        font-size: 22px;
+    }
+
+    /* Boutons */
+    button{
+        /* Taille du texte */
+        font-size: 18px;
+    }
+}
